@@ -29,7 +29,7 @@ const Footer = () => {
       
       </div>
 
-    <div className='w-screen h-[946px] md:h-[499px] bg-[#F0F0F0] mt-40 md:mt-24 px-5 grid grid-cols-1 justify-center items-center '>
+    <div className='w-screen h-[946px] md:h-[499px] bg-[#F0F0F0] mt-40 md:mt-24  grid grid-cols-1 justify-center items-center '>
         <div className='w-[360px] sm:w-[600px] md:w-[900px] lg:w-[1140px] h-[177px] ml-5 flex flex-col md:flex-row justify-between  gap-10 md:gap-0 pt-40 md:pt-16 '>
             <div className='w-[248px] h-[177px] flex flex-col gap-5 md:ml-10 md:gap-[35px]'>
                 <h1 className='text-[33.45px] font-bold leading-[40.15px] text-left'>SHOP.CO</h1>
@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='w-[146px] h-[177px] flex flex-col gap-[26px]'>
+            <div className='w-[146px] md:w-[146px] h-[177px] flex flex-col gap-[26px]'>
                 <h1 className='text-base font-medium leading-[18px] tracking-[3px]'>HELP</h1>
                 <div className='flex flex-col gap-[26px] text-[#818181] '>
                 <p className='text-base font-normal leading-[19px]'>Customer Support</p>
@@ -62,7 +62,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='w-[149px] h-[177px] flex flex-col gap-[26px]'>
+            <div className='w-[130px] md:w-[149px] h-[177px] flex flex-col gap-[26px]'>
                 <h1 className='text-base font-medium leading-[18px] tracking-[3px]'>FAQ</h1>
                 <div className='flex flex-col gap-[26px] text-[#818181] '>
                 <p className='text-base font-normal leading-[19px]'>Account</p>
@@ -72,7 +72,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='w-[159px] h-[177px] flex flex-col gap-[26px]'>
+            <div className='w-[150px] md:w-[159px] h-[177px] flex flex-col gap-[26px]'>
                 <h1 className='text-base font-medium leading-[18px] tracking-[3px]'>RESOURCES</h1>
                 <div className='flex flex-col gap-[26px] text-[#818181] '>
                 <p className='text-base font-normal leading-[19px]'>Free eBooks</p>

@@ -7,9 +7,9 @@ import tick from '../assets/tick.png'
 const Happyrate = () => {
   return (
     <>
-    <h1 className='text-5xl m-[70px] font-bold leading-[57.6px] text-left'>OUR HAPPY CUSTOMERS</h1>
+    <h1 className='text-5xl text-center md:m-[70px] font-bold leading-[57.6px] md:text-left'>OUR HAPPY CUSTOMERS</h1>
     <div className='flex flex-cols-1 md:flex-row justify-evenly mb-28'>
-        <div className='w--[358px] lg:w-[400px] h-[240px] py-[28px] px-[32px] rounded-[20px] border-2'>
+        <div className='w-[350px] lg:w-[400px] h-[250px] md:h-[240px] py-[28px] px-[10px] md:px-[32px] rounded-[20px] border-2'>
           <div className='w-[336px] h-[161.58px] flex flex-col gap-4'>
             <Image src={stars} alt='stars' className='w-[138.84px] h-[22.58px] gap-[6.49px]'/>
             <div className='flex gap-2 items-center'><p className='text-xl font-bold leading-[22px]'>Sarah M.</p>

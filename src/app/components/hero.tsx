@@ -15,10 +15,10 @@ const Hero = () => {
     <>
     <div className='flex flex-col md:flex-row w-screen justify-evenly h-[100%] mt-[25px] bg-[#F2F0F1]'>
      
-    <div className='w-[360px] md:w-[577px] h-[550px] flex flex-col ml-[10px] md:ml-[70px] gap-[10px] md:gap-[40px] '>
+    <div className='w-[350px] md:w-[577px] h-[550px] flex flex-col ml-[5px] md:ml-[70px] gap-[10px] md:gap-[40px] '>
         <div className=' mt-24 '><h1 className='text-[36px] md:text-[64px] font-bold leading-[34px] md:leading-[64px] style={{fontFamily:"font-Bold"}}' >FIND CLOTHES THAT MATCHES YOUR STYLE</h1></div>
         <p className=' text-sm md:text-base font-normal leading-[22px] text-[#818181] style={{fontFamily:"Satoshi-Light"}}'>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-        <button className='w-[360px] justify-center sm:w-[210px] h-[52px] py-[16px] px-[54px] gap-[12px] rounded-[62px] bg-black text-base font-medium leading-[21.6px] text-white hover:bg-[#818181] style={{fontFamily:"Satoshi-Light"}}'>Shop Now</button>
+        <button className='w-full justify-center sm:w-[210px] h-[52px] py-[16px] px-[54px] gap-[12px] rounded-[62px] bg-black text-base font-medium leading-[21.6px] text-white hover:bg-[#818181] style={{fontFamily:"Satoshi-Light"}}'>Shop Now</button>
             
         <div className='grid grid-cols-2 md:grid-flow-col mx-auto md:justify-evenly w-[270px] md:w-full h-[74px]  gap-[32px]'>
         <div className="">
