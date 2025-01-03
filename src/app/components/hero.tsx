@@ -1,68 +1,75 @@
 "use client"
+
 import React from 'react';
 import Image from 'next/image';
-import heroImage from '../assets/heroImage.jpg';
-import vector from '../assets/Vector.png'
-import '../css/satoshi.css'
-import '../css/font.css'
-import { useEffect } from 'react';
-import gsap from 'gsap';
-
-
+import heroImage from '../../../public/heroImage.jpg';
+import vector from '../../../public/Vector.png';
+import '../css/satoshi.css';
+import '../css/font.css';
 
 const Hero = () => {
   return (
     <>
-    <div className='flex flex-col md:flex-row w-screen justify-evenly h-[100%] mt-[25px] bg-[#F2F0F1]'>
-     
-    <div className='w-[350px] md:w-[577px] h-[550px] flex flex-col ml-[5px] md:ml-[70px] gap-[10px] md:gap-[40px] '>
-        <div className=' mt-24 '><h1 className='text-[36px] md:text-[64px] font-bold leading-[34px] md:leading-[64px] style={{fontFamily:"font-Bold"}}' >FIND CLOTHES THAT MATCHES YOUR STYLE</h1></div>
-        <p className=' text-sm md:text-base font-normal leading-[22px] text-[#818181] style={{fontFamily:"Satoshi-Light"}}'>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-        <button className='w-full justify-center sm:w-[210px] h-[52px] py-[16px] px-[54px] gap-[12px] rounded-[62px] bg-black text-base font-medium leading-[21.6px] text-white hover:bg-[#818181] style={{fontFamily:"Satoshi-Light"}}'>Shop Now</button>
-            
-        <div className='grid grid-cols-2 md:grid-flow-col mx-auto md:justify-evenly w-[270px] md:w-full h-[74px]  gap-[32px]'>
-        <div className="">
-            <h1 className=' text-[24px] md:text-[40px] font-bold leading-[54px] text-left'>200+</h1>
-            <p className='text-[12px] md:text-base font-normal leading-[22px] text-left text-[#818181] style={{fontFamily:"Satoshi-Light"}}'>International Brands</p>
-            </div> 
-        <div className="">
-            <h1 className=' text-[24px] md:text-[40px] font-bold leading-[54px] text-left'>2000+</h1>
-            <p className='text-[12px] md:text-base font-normal leading-[22px] text-left text-[#818181] style={{fontFamily:"Satoshi-Light"}}'>High-Quality Products</p>
+      <div className='flex flex-col md:flex-row w-full justify-evenly h-auto mt-6 bg-[#F2F0F1] p-4 md:p-0'>
+        {/* Left Section */}
+        <div className='w-full md:w-[577px] flex flex-col gap-4 md:gap-10 ml-2 md:ml-16'>
+          <div className='mt-6 md:mt-24'>
+            <h1 className='text-[28px] md:text-[64px] font-bold leading-[34px] md:leading-[64px] text-center md:text-left'>
+              FIND CLOTHES THAT MATCHES YOUR STYLE
+            </h1>
+          </div>
+          <p className='text-sm md:text-base text-[#818181] text-center md:text-left'>
+            Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+          </p>
+          <div className='flex justify-center md:justify-start'>
+            <button className='w-full md:w-[210px] h-[52px] py-4 px-6 rounded-full bg-black text-base font-medium text-white hover:bg-[#818181]'>
+              Shop Now
+            </button>
+          </div>
+          {/* Stats Section */}
+          <div className='grid grid-cols-2 gap-4 md:grid-cols-3 mx-auto md:justify-evenly w-[270px] md:w-full'>
+            <div className='text-center'>
+              <h1 className='text-[24px] md:text-[40px] font-bold'>200+</h1>
+              <p className='text-xs md:text-base text-[#818181]'>International Brands</p>
             </div>
-        <div className="">
-            <h1 className=' text-[24px] md:text-[40px] font-bold leading-[54px] text-left'>30,000+</h1>
-            <p className='text-[12px] md:text-base font-normal leading-[22px] text-left text-[#818181] style={{fontFamily:"Satoshi-Light"}}'>Happy Customers</p>
+            <div className='text-center'>
+              <h1 className='text-[24px] md:text-[40px] font-bold'>2000+</h1>
+              <p className='text-xs md:text-base text-[#818181]'>High-Quality Products</p>
             </div>
-    </div>
-    </div>
-    <div className=' w-[390x] md:w-[500px] h-[663px]'>
-    <div className="relative    ">
-  <Image 
-    src={heroImage}
-    alt="heroImage"
-    className=" w-full md:h-[663px]" 
-  />
-
-  <div className="vector absolute top-60 left-5">
-    <Image 
-      src={vector} 
-      alt="vector"
-      className="w-[44px] h-[44px] md:w-[56px] md:h-[56px]" 
-    />
-  </div>
-
-  <div className="vector absolute top-[70px] right-4">
-    <Image 
-      src={vector} 
-      alt="vector"
-      className="w-[74px] h-[74px] md:w-[104px] md:h-[104px]  " 
-    />
-  </div>
-</div>
-</div>
-    </div>
-
+            <div className='text-center'>
+              <h1 className='text-[24px] md:text-[40px] font-bold'>30,000+</h1>
+              <p className='text-xs md:text-base text-[#818181]'>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+        {/* Right Section */}
+        <div className='w-full md:w-[500px] h-auto flex justify-center mt-4 md:mt-0'>
+          <div className='relative'>
+            <Image 
+              src={heroImage}
+              alt="heroImage"
+              className="w-full h-auto max-w-[500px] md:h-[663px]"
+            />
+            {/* Vectors */}
+            <div className="absolute top-32 left-2 md:top-60 md:left-5">
+              <Image 
+                src={vector} 
+                alt="vector"
+                className="w-11 h-11 md:w-14 md:h-14" 
+              />
+            </div>
+            <div className="absolute top-14 right-2 md:top-[70px] md:right-4">
+              <Image 
+                src={vector} 
+                alt="vector"
+                className="w-18 h-18 md:w-26 md:h-26" 
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
-)}
+  );
+};
 
-export default Hero
+export default Hero;
