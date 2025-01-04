@@ -37,7 +37,7 @@ const Footer = () => {
         <div>
           <h1 className="text-2xl font-bold">SHOP.CO</h1>
           <p className="mt-2 text-sm text-[#818181]">
-            We have clothes that suit your style and which you're proud to wear. From women to men.
+            We have clothes that suit your style and which you&apos;re proud to wear. From women to men.
           </p>
           <div className="mt-4 flex gap-4">
             <FaTwitter className="w-8 h-8 rounded-full border border-gray-400 p-2" />

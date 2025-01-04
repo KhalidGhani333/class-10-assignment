@@ -6,7 +6,7 @@ export default function Contact() {
             Get in <span className="text-red-500">Touch</span>
           </h2>
           <p className="text-gray-600 text-lg">
-            Have questions or feedback? We'd love to hear from you. Reach out to us anytime!
+            Have questions or feedback? We&apos;d love to hear from you. Reach out to us anytime!
           </p>
         </div>
   
