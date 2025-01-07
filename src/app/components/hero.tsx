@@ -48,6 +48,7 @@ const Hero = () => {
             <Image 
               src={heroImage}
               alt="heroImage"
+              priority
               className="w-full h-auto max-w-[500px] md:h-[663px]"
             />
             {/* Vectors */}
