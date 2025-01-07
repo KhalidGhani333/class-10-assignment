@@ -21,9 +21,9 @@ const TopSelling = () => {
   const [product, setProduct] = useState([])
 
   async function FetchData() {
-    const req = await fetch("http://localhost:3000/api/productData")
-    const res = await req.json()
-    console.log(res);
+    const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+    const req = await fetch(`${baseUrl}/api/productData`);
+    const res = await req.json();
     setProduct(res)
   }
   useEffect(() => {
