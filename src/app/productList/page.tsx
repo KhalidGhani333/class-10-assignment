@@ -20,9 +20,11 @@ export default function Products() {
 
   // Fetch product data
   async function FetchData() {
-    const req = await fetch("http://localhost:3000/api/productData");
-    const res = await req.json();
-    setProduct(res);
+    const req = await fetch("https://class-10-assignment-kappa.vercel.app/api/productData", {
+      cache: "no-store",});
+      
+      const res = await req.json();
+      setProduct(res);
   }
 
   useEffect(() => {

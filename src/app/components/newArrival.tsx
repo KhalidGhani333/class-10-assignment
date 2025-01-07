@@ -21,12 +21,11 @@ const NewArrival = () => {
   const [product, setProduct] = useState([])
 
   async function FetchData() {
-    const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
-    const req = await fetch(`${baseUrl}/api/productData`,{
+    const req = await fetch("https://class-10-assignment-kappa.vercel.app/api/productData", {
       cache: "no-store",});
       
-    const res = await req.json();
-    setProduct(res);
+      const res = await req.json();
+      setProduct(res);
   }
   useEffect(() => {
     FetchData()
