@@ -22,7 +22,8 @@ const NewArrival = () => {
 
   async function FetchData() {
     const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
-    const req = await fetch(`${baseUrl}/api/productData`);
+    const req = await fetch(`${baseUrl}/api/productData`,{
+      cache: "no-store",});
       
     const res = await req.json();
     setProduct(res);
