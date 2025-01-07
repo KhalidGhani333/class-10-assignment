@@ -23,6 +23,7 @@ export default function ProductCard(product: Tproduct) {
           alt={product.name}
           width={200}
           height={200}
+          priority
           className="w-full max-w-[295px] h-auto rounded-[20px] hover:scale-95 duration-300" />
         <span className="text-sm md:text-xl font-bold leading-[27px] block">
           <h1>{product.name}</h1>
@@ -34,6 +35,7 @@ export default function ProductCard(product: Tproduct) {
             alt="rating"
             width={100}
             height={50}
+            priority
             className="w-[104px] h-auto" />
           <span className="text-sm font-normal">
             {product.rating}/<span className="text-[#818181]">5</span>

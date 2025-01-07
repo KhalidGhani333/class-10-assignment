@@ -21,19 +21,12 @@ const TopSelling = () => {
   const [product, setProduct] = useState([])
 
   async function FetchData() {
-    try {
       const req = await fetch("https://class-10-assignment-kappa.vercel.app/api/productData", {
-        cache: "no-store",
-      });
-      if (!req.ok) {
-        throw new Error(`HTTP error! status: ${req.status}`);
-      }
+      cache: "no-store",});
+      
       const res = await req.json();
-      console.log(res);
       setProduct(res);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
+    
   }
   useEffect(() => {
     FetchData()
